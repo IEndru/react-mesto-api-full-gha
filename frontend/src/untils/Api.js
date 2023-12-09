@@ -103,11 +103,11 @@
 
 const api = new Api({
   //url: 'https://mesto.nomoreparties.co/v1/cohort-74',
-  url: 'http://localhost:3001',
+  //url: 'http://localhost:3000',
+  url: 'https:// api.iendru.nomoredomainsmonster.ru',
   headers: {
     'Content-Type': 'application/json',
     authorization: `Bearer ${localStorage.getItem('token')}`,
-    //authorization: '11813631-a6ff-4278-8ebe-34f9a02b5859',
   }
 });
 

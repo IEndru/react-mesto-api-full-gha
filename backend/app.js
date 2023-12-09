@@ -8,7 +8,7 @@ const { routes } = require('./routes');
 const { handleError } = require('./middlewares/handleError');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 
-const { PORT = 3001, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
+const { PORT = 3000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
@@ -27,7 +27,12 @@ mongoose.connect(DB_URL)
   });
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://localhost:3000'],
+  origin: [
+    'http://localhost:3001',
+    'https://localhost:3001',
+    'https://iendru.nomoredomainsmonster.ru',
+    'http://iendru.nomoredomainsmonster.ru'
+  ],
   credentials: true,
 }));
 

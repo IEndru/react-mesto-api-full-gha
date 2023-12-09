@@ -13,7 +13,6 @@ function auth(req, res, next) {
       throw new UnauthorizedError('Невалидные почта или пароль');
     }
     const token = authorization.replace('Bearer ', '');
-    /*const secret = JWT_SECRET || 'default_secret';*/
     const secret = NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key';
     try {
       payload = jwt.verify(token, secret);

@@ -36,7 +36,7 @@ function App() {
         Promise.all([api.getUserInfo(), api.getInitialCards()])
             .then(([userData, initialCards]) => {
                 setCurrentUser(userData);
-                console.log(initialCards);
+               // console.log(initialCards);
                 setCards(initialCards);
             })
             .catch((err) => {
@@ -48,7 +48,7 @@ function App() {
     function handleCardLike(card) {
         //const isLiked = card.likes.some((i) => i._id === currentUser._id);
         const isLiked = card.likes.includes(currentUser._id);
-        console.log(isLiked);
+        //console.log(isLiked);
         if (isLiked) {
             api.deleteLike(card._id)
                 .then((newCard) => {
@@ -157,7 +157,7 @@ function App() {
                 .then((data) => {
                     localStorage.setItem('isLoggedIn', JSON.stringify(true));
                     setIsLoggedIn(true);
-                    console.log(data)
+                   //console.log(data)
                     setAuthEmail(data.email);
                     navigate('/');
                 })
@@ -193,7 +193,7 @@ function App() {
                 if (data.token) {
                     localStorage.setItem('isLoggedIn', JSON.stringify(true));
                     setIsLoggedIn(true);
-                    console.log(data.token)
+                    //console.log(data.token)
                     localStorage.setItem('token', data.token);
                     navigate('/');
                 }

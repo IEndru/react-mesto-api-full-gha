@@ -91,7 +91,6 @@ const login = async (req, res, next) => {
     }
     const token = jwt.sign(
       { _id: user._id },
-      /*JWT_SECRET,*/
       NODE_ENV === 'production' ? JWT_SECRET : 'some-secret-key',
       { expiresIn: '7d' });
     res.status(200).json({ token });
