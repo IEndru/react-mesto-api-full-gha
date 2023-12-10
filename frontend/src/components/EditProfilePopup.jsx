@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useContext } from 'react';
 import PopupWithForm from "./PopupWithForm";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
 import { useForm } from '../hooks/useForm';
 
 const EditProfilePopup = ({ isOpen, onClose, onUpdateUser }) => {
-    const currentUser = React.useContext(CurrentUserContext);
+    const currentUser = useContext(CurrentUserContext);
     const { values, handleChange, setValues } = useForm({
         name: currentUser.name || '',
         about: currentUser.about || '',
