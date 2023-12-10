@@ -102,8 +102,6 @@
 }
 
 const api = new Api({
-  //url: 'https://mesto.nomoreparties.co/v1/cohort-74',
-  //url: 'http://localhost:3000',
   url: 'https:// api.iendru.nomoredomainsmonster.ru',
   headers: {
     'Content-Type': 'application/json',
