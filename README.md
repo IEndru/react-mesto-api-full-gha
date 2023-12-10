@@ -9,6 +9,6 @@
 
 ## Ссылки на проект
 
-Публичный IP 158.160.128.182
+IP 158.160.128.182
 Frontend https://iendru.nomoredomainsmonster.ru
 Backend https://api.iendru.nomoredomainsmonster.ru
