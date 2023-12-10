@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.128.182
+IPv4 158.160.128.182
 
-Frontend https://iendru.nomoredomainsmonster.ru
+Frontend https://iendru.nomoredomainsmonster.ru/
 
-Backend https://api.iendru.nomoredomainsmonster.ru
+Backend https://api.iendru.nomoredomainsmonster.ru/

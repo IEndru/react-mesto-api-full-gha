@@ -32,7 +32,7 @@ app.use(cors({
     'http://localhost:3001',
     'https://localhost:3001',
     'https://iendru.nomoredomainsmonster.ru',
-    'http://iendru.nomoredomainsmonster.ru'
+    'http://iendru.nomoredomainsmonster.ru',
   ],
   credentials: true,
 }));
