@@ -27,15 +27,7 @@ mongoose.connect(DB_URL)
     console.log('Ошибка при подключении к MongoDB:', error);
   });
 
-app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'https://localhost:3000',
-    'https://iendru.nomoredomainsmonster.ru',
-    'http://iendru.nomoredomainsmonster.ru',
-  ],
-  credentials: true,
-}));
+app.use(cors());
 
 app.use(limiter);
 
