@@ -102,7 +102,7 @@
 }
 
 const api = new Api({
-  url: 'https:// api.iendru.nomoredomainsmonster.ru',
+  url: 'https://api.iendru.nomoredomainsmonster.ru',
   headers: {
     'Content-Type': 'application/json',
     authorization: `Bearer ${localStorage.getItem('token')}`,
